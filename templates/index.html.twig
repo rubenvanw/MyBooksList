@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    Overview
+{% endblock %}
+{% block content %}
+    <table class="table table-striped-bordered">
+        <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+            <tr>
+                <td> <img  style="width: 4rem;" class="card-img-top" src="{{ book.image }}" alt="{{ book.title }}"></td>
+                <td><a class="text-decoration-none" href="{{ path('show', {id: book.id}) }}"><h6>{{ book.title }}</h6></a></td>
+                <td><button class="btn btn-outline-primary disabled">{{ book.status }}</button></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

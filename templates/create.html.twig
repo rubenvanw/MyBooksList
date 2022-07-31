@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    Create
+{% endblock %}
+{% block content %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit" class="btn btn-primary mt-2">
+        Submit
+    </button>
+    {{ form_end(form) }}
+{% endblock %}
