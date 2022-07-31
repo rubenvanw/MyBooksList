@@ -17,8 +17,8 @@ composer install
 ```
 
 configure your database credentials in the .env file
---[symfony database documentation](https://symfony.com/doc/current/doctrine.html)
---[example image](https://prnt.sc/iakRIBefl4BH)
+[symfony database documentation](https://symfony.com/doc/current/doctrine.html)  
+[example image](https://prnt.sc/iakRIBefl4BH)  
 
 
 after that create the database
